@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My New Webpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+   <div id="logo"><a href="#"><img src="logo5.jpg" width="960" height="320"></a></div>
+   <div id="myName">NAZMUDDIN AL MASOOD</div>
+   <ul class="nav_menu"> 
+       <li><a href="index.html">Home</a></li>
+       <li><a href="About%20me.html">About me</a></li>
+       <li><a href="Contact%20us.html">Contact us</a></li>
+   </ul>
+   <div class="clear"></div>
+   </header>
+    
+  <section id="mainBody">
+     
+      <div id="welcomeDiv"><h2>Welcome to my page</h2>
+        <h4>Navigate easily</h4>
+        <ul class="nav">
+        <li><a href="#me">Me</a></li>
+        <li><a href="#home">My Homeland</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#things">Things I Like</a></li>
+        </ul>
+        </div>
+      <div id="newsLetter">
+        Sign up to get exciting news :<br>
+        <input type="text" name="Name"><br>
+        <input type="email" name="Email"><br><br>
+        <input type="submit" name="Submit">
+        </div>
+      <div class="clear"></div>   
+      <div id="leftDiv">   
+        <a href="https://drive.google.com/open?id=0B8E_yyQODcJyQmcwZENVb19YVGM"><img src="logo3.jpg" alt="The editor's image"></a>
+        <h3><a name="Me">Me</a></h3>
+        <p>
+         Hi,this is Nazmu. I am trying to make a new website. I belong from a south asian country called Bangladesh. I am 20. </p>
+        <p>Bangladesh is a green country. Even though I don't like it in here because of the country's policies but I would say that the general people are okay. Yeah, that's about it. </p>
+        </div>
+      <div id="rightDiv">
+        <a href="http://www.bangladesh.com/"><img src="logo4.jpg"></a>
+        <h3><a name="home">My Homeland</a></h3>
+        <p>Bangladesh is a very beautiful country. It is home to nearly 180 millions of people. Dhaka is the capital city and Chittagong is the business capital.
+            <a href="https://www.bracu.ac.bd/" style="text-decoration:none">BRAC University</a> is situated in the Dhaka city.
+        </p>
+        <p>This web-development course is being served on the <a href="https://piazza.com/class/jqu9vezjtfc56r" style="text-decoration:none">Piazza </a>page.</p></div>
+      <div id="hobbyDiv">
+        <h3><a name="hobbies">Hobbies</a></h3>
+        Some of my hobbies are playing table-tennis, badminton, have a pet bird, spending time with people, talking to them. Some of the movies I watched are: 
+        <ul>
+        <li>Tarzan</li>
+        <li>In Seach of the Kastaways</li>
+        <li>Narnia Chronicles</li>
+        <li>Lucky Seven</li>
+        <li>Shukher Chotto Pakhi</li>
+        </ul></div>
+      <div id="tableDiv">
+        <h3><a name="things">Things I Like</a></h3>
+        <table style="border: 1px solid;">
+        <tr style="text-align: center;">
+            <td style="padding: 5px">Sports</td>
+            <td style="border: 1px solid;padding: 5px;">Badminton</td>
+            <td style="border: 1px solid;padding: 5px;">Cricket</td>
+            <td style="border: 1px solid;padding: 5px;">Football</td>
+            <td style="border: 1px solid;padding: 5px;">Maramari</td>
+            </tr>  
+        <tr style="text-align: center;">
+            <td style="padding: 5px">Pets</td>
+            <td style="border: 1px solid;padding: 5px;">Rabbit</td>
+            <td style="border: 1px solid;padding: 5px;">Zebra</td>
+            <td style="border: 1px solid;padding: 5px;">Tiger</td>
+            <td style="border: 1px solid;padding: 5px;">Pigeon</td>
+            </tr>
+        <tr style="text-align: center;">
+            <td style="padding: 5px">Cars</td>
+            <td style="border: 1px solid;padding: 5px;">BMW</td>
+            <td style="border: 1px solid;padding: 5px;">Mercedes</td>
+            <td style="border: 1px solid;padding: 5px;">Corolla</td>
+            <td rowspan="2" style="border: 1px solid;padding: 5px;">Trolly</td>
+            </tr>
+        <tr style="text-align: center;">
+            <td style="padding: 5px">Bike</td>
+            <td style="border: 1px solid;padding: 5px;">Votvoti</td>
+            <td style="border: 1px solid;padding: 5px;">Yamaha</td>
+            <td style="border: 1px solid;padding: 5px;">Suzuki</td>           
+            </tr>    
+        </table>
+        </div>
+      <div id="quoteDiv">
+        <script type="text/javascript">
+        var quotes = ['Whoever is happy will make others happy too.','Tell me and I forget. Teach me and I remember. Involve me and I learn.','There is nothing on this earth more to be prized than true friendship.','A leader is one who knows the way, goes the way, and shows the way.','Very little is needed to make a happy life; it is all within yourself, in your way of thinking.','There is only one happiness in this life, to love and be loved.','If opportunity doesn\'t knock, build a door.']
+
+        function newQ(){
+        var randomNumber= Math.floor(Math.random()*(quotes.length));
+        document.write(quotes[randomNumber]);
+        }
+        newQ();
+        </script>    
+      </div>       
+      <div id="buttonDiv">     
+        <button class="button" onclick="btnRed()" style="background-color: red;color: red">Button1</button>
+        <button class="button" onclick="btnGreen()" style="background-color: darkolivegreen;color: darkolivegreen">Button2</button>
+        <button class="button" onclick="btnBlue()" style="background-color: coral;color: coral">Button3</button>
+        <button class="button" onclick="btnYellow()" style="background-color: yellow;color: yellow">Button4</button>
+
+       <script type="text/javascript">
+        function btnRed() {
+        document.getElementById("quoteDiv").style.backgroundColor="Red";
+        document.getElementById("quoteDiv").style.borderColor="darkblue";
+        document.getElementById("quoteDiv").style.fontFamily="Comic Sans MS";
+        document.getElementById("quoteDiv").style.fontSize="17px";}
+        function btnGreen() {
+        document.getElementById("quoteDiv").style.backgroundColor="darkolivegreen";
+        document.getElementById("quoteDiv").style.borderColor="burlywood";
+        document.getElementById("quoteDiv").style.fontFamily="Lucida Console";
+        document.getElementById("quoteDiv").style.fontSize="18px";}
+        function btnBlue() {
+        document.getElementById("quoteDiv").style.backgroundColor="coral";
+        document.getElementById("quoteDiv").style.borderColor="darkgray";
+        document.getElementById("quoteDiv").style.fontFamily="Courier New";
+        document.getElementById("quoteDiv").style.fontSize="19px";}
+        function btnYellow() {
+        document.getElementById("quoteDiv").style.backgroundColor="Yellow";
+        document.getElementById("quoteDiv").style.borderColor="darksalmon";
+        document.getElementById("quoteDiv").style.fontFamily="Verdana";
+        document.getElementById("quoteDiv").style.fontSize="17px";} 
+       </script> 
+      </div>
+      
+</section>
+    <div class="clear"></div>
+    
+  <footer>Copyright @nazmuu<br>
+    <script language="Javascript">
+     document.write("This page was last modified on: " + document.lastModified +"");
+</SCRIPT>
+    </footer>
+</div>
+
+</body>
+</html>
